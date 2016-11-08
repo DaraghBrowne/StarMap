@@ -27,6 +27,7 @@ void loadData()
     //Make on object of class Star
     
     Star star = new Star(starTable.getRow(i));
+    stars.add(star);
   }
   
 }
