@@ -8,19 +8,14 @@ class Star
   int Zg;
   float AbsMag;
   
-  Star(TableRow R)
+  Star(TableRow Row)
   {
-    //row.getInt("Hub?") = Hab;
-    this.Hab = Hab;
-    this.DisplayName = DisplayName;
-    this.Distance = Distance;
-    this.Xg = Xg;
-    this.Yg = Yg;
-    this.Zg = Zg;
-    this.AbsMag = AbsMag;
-    
+    Hab = Row.getInt("Hub?");
+    DisplayName = Row.getString("DisplayName");
+    Distance = Row.getFloat("Distance");
+    Xg = Row.getInt("Xg");
+    Yg = Row.getInt("Yg");
+    Zg = Row.getInt("Zg");
+    AbsMag = Row.getFloat("AbsMag");
   }
-  
-  
-  
 }
